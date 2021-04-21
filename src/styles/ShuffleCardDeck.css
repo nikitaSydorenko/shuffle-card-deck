@@ -1,0 +1,43 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerOutput {
+    margin-top: 100px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+.containerOutput > div{
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.containerCards ul{
+    gap: 3px;
+    list-style-type: none;
+    width: 25%;
+    margin: 10px auto;
+    display: grid;
+    gap: 3px;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    justify-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 130px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
