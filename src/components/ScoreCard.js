@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/ScoreCard.css'
 
-const ScroreCard = ({quality = '', algorithmEvaluation = null, totalTime = 0, timeShuffle = {}}) => {
+const ScroreCard = ({quality = '', algorithmEvaluation = null, totalTime = 0, timeShuffle = {}, method = ''}) => {
     return (
         <div className='tableQuality'>
             <h3>Quality and timing of shuffles</h3>        
@@ -13,6 +13,7 @@ const ScroreCard = ({quality = '', algorithmEvaluation = null, totalTime = 0, ti
                             <th>The end of the shuffle</th>
                             <th>Total shuffle time</th>
                             <th>Quality shuffles</th>
+                            <th>Method</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -21,6 +22,7 @@ const ScroreCard = ({quality = '', algorithmEvaluation = null, totalTime = 0, ti
                             <td>{timeShuffle.end}</td>
                             <td>{totalTime} ms</td>
                             <td>{quality} ({algorithmEvaluation})</td>
+                            <td>{method}</td>
                         </tr>
                     </tbody>
                 </table>
