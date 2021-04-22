@@ -41,3 +41,14 @@ img {
     color: red;
     text-align: center;
 }
+
+.loader{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+}
+ svg circle{
+    width: 80px;
+    display: block;
+}
